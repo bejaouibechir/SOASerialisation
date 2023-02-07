@@ -1,10 +1,10 @@
-﻿//#define soap
+﻿#define soaporbinary
 
 using System;
 
 namespace SOA.Serialisation
 {
-#if soap
+#if soaporbinary
     [Serializable]
 #endif
     public  class Personne

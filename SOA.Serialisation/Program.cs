@@ -1,16 +1,17 @@
 ﻿//#define soap
 //#define restxml
+#define binary
 //#define serializesoap
 //#define deserializesoap
 //#define serializexml
 //#define deserializexml
 #define restjson
 //#define serializejson
-#define deserializejson
+//#define deserializejson
 
 using System;
 using System.IO;
-using System.Runtime.Serialization.Formatters.Soap;
+using System.Runtime.Serialization.Formatters.Binary;
 using System.Xml.Serialization;
 
 
@@ -20,6 +21,14 @@ namespace SOA.Serialisation
     {
         static void Main(string[] args)
         {
+#if binary
+            Personne moi = new Personne();
+            BinarySerialisation soapSerailisation = new BinarySerialisation();
+            soapSerailisation.Serialize(moi, "C:\\temp\\moi.dat");
+#endif
+
+
+
             //Game de service asmx,WCF utilisent echangent les données exclusivement avec SOAP
             //WCF utilisent echangent les données principalement avec SOAP
 #if soap

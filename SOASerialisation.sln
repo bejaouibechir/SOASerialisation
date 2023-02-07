@@ -5,11 +5,35 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOA.Serialisation", "SOA.Serialisation\SOA.Serialisation.csproj", "{BC216437-8502-4F82-90B0-9711C446C7C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOA.Console.Client", "SOA.Console.Client\SOA.Console.Client.csproj", "{40441F88-CD4D-4E59-ACD5-77860C6773CE}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "SOA.Bare.Service", "SOA.Bare.Service\", "{48E2EB10-D702-4FAA-A683-7982BBD66294}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_51295"
+		Debug.AspNetCompiler.PhysicalPath = "SOA.Bare.Service\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51295\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_51295"
+		Release.AspNetCompiler.PhysicalPath = "SOA.Bare.Service\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51295\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "51295"
+		SlnRelativePath = "SOA.Bare.Service\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{F61DA099-1D14-43C7-8778-E494F2DAFF3F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOA.App.Service", "SOA.App.Service\SOA.App.Service.csproj", "{F7500AA6-F9DE-4E7A-901C-5D1DBDE51D7B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOA.Intranet.Service", "SOA.Intranet.Service\SOA.Intranet.Service.csproj", "{EDAFD5FF-08F2-4DD7-9352-8A2240E97DEF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOA.CalulatorService", "SOA.CalulatorService\SOA.CalulatorService.csproj", "{FA1AE8FD-8EB0-4EA5-A98B-2F29280C9960}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOA.Library", "SOA.Library\SOA.Library.csproj", "{F4A7FA45-9936-4A18-B412-A528C261C321}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,18 +45,26 @@ Global
 		{BC216437-8502-4F82-90B0-9711C446C7C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC216437-8502-4F82-90B0-9711C446C7C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC216437-8502-4F82-90B0-9711C446C7C2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{40441F88-CD4D-4E59-ACD5-77860C6773CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{40441F88-CD4D-4E59-ACD5-77860C6773CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{40441F88-CD4D-4E59-ACD5-77860C6773CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{40441F88-CD4D-4E59-ACD5-77860C6773CE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F61DA099-1D14-43C7-8778-E494F2DAFF3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F61DA099-1D14-43C7-8778-E494F2DAFF3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F61DA099-1D14-43C7-8778-E494F2DAFF3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F61DA099-1D14-43C7-8778-E494F2DAFF3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48E2EB10-D702-4FAA-A683-7982BBD66294}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48E2EB10-D702-4FAA-A683-7982BBD66294}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48E2EB10-D702-4FAA-A683-7982BBD66294}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{48E2EB10-D702-4FAA-A683-7982BBD66294}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{F7500AA6-F9DE-4E7A-901C-5D1DBDE51D7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7500AA6-F9DE-4E7A-901C-5D1DBDE51D7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7500AA6-F9DE-4E7A-901C-5D1DBDE51D7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7500AA6-F9DE-4E7A-901C-5D1DBDE51D7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDAFD5FF-08F2-4DD7-9352-8A2240E97DEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDAFD5FF-08F2-4DD7-9352-8A2240E97DEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDAFD5FF-08F2-4DD7-9352-8A2240E97DEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDAFD5FF-08F2-4DD7-9352-8A2240E97DEF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FA1AE8FD-8EB0-4EA5-A98B-2F29280C9960}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FA1AE8FD-8EB0-4EA5-A98B-2F29280C9960}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA1AE8FD-8EB0-4EA5-A98B-2F29280C9960}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA1AE8FD-8EB0-4EA5-A98B-2F29280C9960}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4A7FA45-9936-4A18-B412-A528C261C321}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4A7FA45-9936-4A18-B412-A528C261C321}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4A7FA45-9936-4A18-B412-A528C261C321}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4A7FA45-9936-4A18-B412-A528C261C321}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
