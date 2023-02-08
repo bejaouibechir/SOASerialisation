@@ -1,21 +1,22 @@
-﻿using System;
+﻿using SOA.ShapeService.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
 
-namespace SOA.RHService
+namespace SOA.ShapeService
 {
+     
     [ServiceContract]
-    public interface IRHService
+    public interface IShapeService
     {
         [OperationContract]
-        void AddEmployee(Employee employee);
-
+        void CalculerPerimetre(Forme forme);
+        
         [OperationContract]
-        EmployeeSOAPResponse GetEmployee(EmployeeSOAPRequest employee);
-    }
+        void CalculerSurface(Forme forme);
 
-   
+    }
 }

@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOA.App.Service", "..\SOA.A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOA.RHService", "..\SOA.RHService\SOA.RHService.csproj", "{2F79A1EF-33D6-4167-9D4D-4B4D794C8CC3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOA.ShapeService", "..\SOA.ShapeService\SOA.ShapeService.csproj", "{24C81169-3C9B-4D73-A759-41872B4F7A4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "..\ConsoleApp1\ConsoleApp1.csproj", "{F61DA099-1D14-43C7-8778-E494F2DAFF3F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{2F79A1EF-33D6-4167-9D4D-4B4D794C8CC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F79A1EF-33D6-4167-9D4D-4B4D794C8CC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F79A1EF-33D6-4167-9D4D-4B4D794C8CC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24C81169-3C9B-4D73-A759-41872B4F7A4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24C81169-3C9B-4D73-A759-41872B4F7A4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24C81169-3C9B-4D73-A759-41872B4F7A4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24C81169-3C9B-4D73-A759-41872B4F7A4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F61DA099-1D14-43C7-8778-E494F2DAFF3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F61DA099-1D14-43C7-8778-E494F2DAFF3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F61DA099-1D14-43C7-8778-E494F2DAFF3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F61DA099-1D14-43C7-8778-E494F2DAFF3F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
