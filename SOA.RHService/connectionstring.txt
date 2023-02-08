@@ -1,0 +1,1 @@
+﻿Data Source=PC2023\PC2023;Initial Catalog=FirmDB;Integrated Security=True

@@ -1,10 +1,13 @@
 ﻿using System.Diagnostics;
+using System.ServiceModel;
 
 namespace SOA.Intranet.Service
 {
-    public class FootballService : IFootballSpecialService
+    [ServiceContract]
+    public class FootballService //: IFootballSpecialService
     {
 
+        [OperationContract]
         #region client abonnement basique
         public void VoirMatchEnDirect()
         {
@@ -13,13 +16,14 @@ namespace SOA.Intranet.Service
 
         #endregion
 
+        
         #region client abonnement vip
-
+        [OperationContract(Name ="Planing")]
         public void ConsulterdPlaningDesMatchs()
         {
             Debug.WriteLine("Consulter le planing des matchs");
         }
-
+        [OperationContract]
         public void VoirRedifusion()
         {
             Debug.WriteLine("Voir les redifusions");
