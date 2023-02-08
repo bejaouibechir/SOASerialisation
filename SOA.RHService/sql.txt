@@ -1,0 +1,23 @@
+﻿--Base: FirmDB
+CREATE TABLE Employees
+(
+    Id int PRIMARY KEY,
+    [Name] NVARCHAR(50),
+    HireDate DATETIME,
+    Salary MONEY
+)
+
+SELECT * FROM [dbo].[Employees]
+SELECT * FROM Credentials
+
+TRUNCATE TABLE [dbo].[Employees]
+
+CREATE TABLE Credentials
+(
+    Id int,
+    [Login] NVARCHAR(50),
+    PasswordHash int
+)
+
+INSERT INTO Credentials VALUES(1,'bechir',1984728699) -- pass hash = 1984728699
+INSERT INTO Credentials VALUES(2,'bechir',-1872639815) -- pass hash = 1984728699

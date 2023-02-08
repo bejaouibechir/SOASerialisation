@@ -1,4 +1,4 @@
-﻿
+﻿//Changer PC2023\PC2023 par le nom de votre serveur sql server
 //Data Source=PC2023\PC2023;Initial Catalog=FirmDB;Integrated Security=True
 using System;
 using System.Configuration;
