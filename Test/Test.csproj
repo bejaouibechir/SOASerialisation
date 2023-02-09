@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.50727</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{2F79A1EF-33D6-4167-9D4D-4B4D794C8CC3}</ProjectGuid>
+    <ProjectGuid>{C8ADB05C-1959-4A78-823F-6E7C5B64F453}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SOA.RHService</RootNamespace>
-    <AssemblyName>SOA.RHService</AssemblyName>
+    <RootNamespace>Test</RootNamespace>
+    <AssemblyName>Test</AssemblyName>
     <ProjectTypeGuids>{3D9AD99F-2412-4246-B90B-4EAA41C64699};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <StartArguments>/client:"WcfTestClient.exe"</StartArguments>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
@@ -36,7 +36,6 @@
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
-    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
     <Reference Include="System.Runtime.Serialization" />
@@ -45,19 +44,12 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Credentials.cs" />
-    <Compile Include="EmployeeSOAPRequest.cs" />
-    <Compile Include="Employee.cs" />
-    <Compile Include="EmployeeSOAPResponse.cs" />
-    <Compile Include="IRHService.cs" />
+    <Compile Include="ITestService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RHService.cs" />
+    <Compile Include="Service1.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="sql.txt" />
+    <None Include="App.config" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

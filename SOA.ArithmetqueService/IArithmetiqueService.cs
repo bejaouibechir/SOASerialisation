@@ -5,21 +5,24 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
 
-namespace SOA.ArithmetiqueService
+namespace SOA.ArithmetqueService
 {
-   
+  
     [ServiceContract]
-    public interface IArithmeticService
+    public interface IArithmetiqueService
     {
         [OperationContract]
-        double Addition(double a,double b);
+        double Add(double a,double b);
+
         [OperationContract]
-        double Soustraction(double a, double b);
-        [OperationContract]
-        double Multiplicaton(double a, double b);
+        double Substract(double a, double b);
+
         [OperationContract]
         [FaultContract(typeof(DivideByZeroException))]
-        double Division(double a, double b);
+        double Divide(double a, double b);
 
-    } 
+        [OperationContract]
+        double Multiply(double a, double b);
+
+    }
 }

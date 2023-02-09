@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "..\ConsoleAp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOA.ArithmetiqueService", "..\SOA.ArithmetiqueService\SOA.ArithmetiqueService.csproj", "{53E2EACE-DA3A-48BE-9113-B93EB9FEECCA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "..\Test\Test.csproj", "{C8ADB05C-1959-4A78-823F-6E7C5B64F453}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{53E2EACE-DA3A-48BE-9113-B93EB9FEECCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53E2EACE-DA3A-48BE-9113-B93EB9FEECCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53E2EACE-DA3A-48BE-9113-B93EB9FEECCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8ADB05C-1959-4A78-823F-6E7C5B64F453}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8ADB05C-1959-4A78-823F-6E7C5B64F453}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8ADB05C-1959-4A78-823F-6E7C5B64F453}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8ADB05C-1959-4A78-823F-6E7C5B64F453}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
